@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add_Update Product</title>
+</head>
+<body>
+
+        <h1>PRODUCT CRUD OPERATION...!</h1>
+        <a href="/">HOME</a>
+        <br>
+        {{message}}
+        <br>
+        <form method="post" action="/product/save">
+
+            Product Id : <input type="text" name="pid" value="{{product.prodId}}"> <br><br>
+            Product Name : <input type="text" name="pnm" value="{{product.prodName}}"> <br><br>
+            Product Price : <input type="text" name="pprc" value="{{product.prodPrice}}"> <br><br>
+            Product Vendor : <input type="text" name="pven" value="{{product.prodVendor}}"> <br><br>
+            Product Qty : <input type="text" name="pqty" value="{{product.prodQty}}"> <br><br>
+
+            <input type="submit">
+
+
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="/">HOME</a><br>
+    <form method="post" action="/product/search">
+
+        Enter Product Id : <input type="text" name="pid"> <br><br>
+        <input type="submit">
+
+    </form>
+    <br><br>
+    {% if product %}
+        {{product}}
+    {% else %}
+        No Product Found with Given Id...!
+    {% endif %}
+
+</body>
+</html>
